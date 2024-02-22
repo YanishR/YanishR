@@ -1,0 +1,20 @@
+[alias]
+ lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+ co = checkout
+ br = branch
+ ci = commit
+ st = status
+ ac = !git add -A && git commit
+ aca = !git add -A && git commit --amend
+ ca = commit --amend
+ ll = log --graph --oneline --decorate --date=relative --all
+ fp = fetch -p
+ bd = branch -D
+ bdup = push origin --delete
+ pushup = push --set-upstream origin
+ new = checkout -b
+ undo = reset --mixed HEAD^
+[pull]
+	rebase = false
+[push]
+	autoSetupRemote = true
