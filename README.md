@@ -1,1 +1,1 @@
-[![GitHub Streak](https://streak-stats.demolab.com?user=YanishR&theme=radical&border_radius=50&date_format=j%20M%5B%20Y%5D&card_width=800)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=YanishR&theme=radical&border_radius=50&date_format=j%20M%5B%20Y%5D&card_width=1000)](https://git.io/streak-stats)
