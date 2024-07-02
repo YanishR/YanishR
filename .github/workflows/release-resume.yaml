@@ -23,6 +23,8 @@ jobs:
 
           RELEASE_ID=$(echo "$LATEST_RELEASE" | jq -r .id)
 
+          echo "RELEASE_ID=$RELEASE_ID" >> $GITHUB_ENV
+
           curl -s -X DELETE \
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
