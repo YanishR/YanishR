@@ -24,12 +24,22 @@
 
 \usepackage[left=0.2in,top=0.2in,right=0.2in,bottom=0.25in]{geometry} % Document margins
 \usepackage{soul}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
 
 \name{Yanish Rambocus} % Your name
  % Your address
 
-\capsdef{////}{\scshape}{1.1pt}{5.2pt}{1pt}
-\address{\caps{165 Upland Road, London, SE22 0DF}}
+\capsdef{////}{\scshape}{1.3pt}{5pt}{1pt}
+\address{\caps{55 Charteris Road, London, N4 3AA}}
 \resetso
 \sodef\an{}{.14mm}{1.35mm}{15mm}
 \address{\an{+44 7951 255607 $|$ yanishrambocus@gmail.com}} % Your phone number and email
@@ -42,25 +52,26 @@
 
 \vspace{-2.1em}
 \begin{rSection}{Profile}   
-    Software Engineer with a year of industry experience.
-    My robust understanding of core CS concepts enables me to effectively 
-    and rapidly adapt to new technologies, as proven by my 
-    industry experience at So Energy.\\
-    Open to a meaningful and challenging remote Software Developer position.
+    Software Engineer for three years developing business applications deployed to the Cloud,  mainly in Kotlin 
+    and Terraform. Working for companies of different sizes and stages, I have led software projects, 
+    prolifically contributed to codebases and mentored Junior developers, improving my technical 
+    and interpersonal skills. I am always keen to learn new technologies.
+    Seeking the right opportunity to positively contribute while growing as an Engineer.\\
     \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
     \vspace{1.5mm}\\
     %\begin{tabular}{ @{\hspace{3mm}} >{\bfseries}l @{\hspace{13.5ex}} l }
     \begin{tabular}{ @{\hspace{3mm}} l @{\hspace{13.5ex}} l }
         \vspace{.5mm}
-        \large{\caps{Technical Skills}} & Kotlin, Python, Java, C++\\
+        \large{\caps{Languages}} & Kotlin, Python, Java\\
         \vspace{.5mm}
-        \large{\caps{Cloud deployment}} & GCP, Docker, k8s, Heroku\\
+        \large{\caps{Cloud Infrastructure}} & AWS, GCP, Terraform \\
         \vspace{.5mm}
-        \large{\caps{Databases}} & PostgreSQL, SQL,  NoSQL\\
+        \large{\caps{Databases}} & PostgreSQL, DynamoDB\\
         \vspace{.5mm}
-        \large{\caps{Version control}} & SVN, Git/Github \\
+        \large{\caps{Messaging Queues}} & Kafka, SQS, Pub/Sub\\
         \vspace{.5mm}
-        \large{\caps{Concepts}} & TTD, PSR, Clean Code\\
+        \large{\caps{Other Technologies}} & AWS ECS \& Lambda, Kubernetes, Quarkus\\
+        & Github Actions, CircleCI, Keycloak\\
     \end{tabular}
 
     \vspace{-1.5mm}
@@ -71,27 +82,22 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Work Experience}
-  \begin{rSubsection}{So Energy}{December 2021 - Present}{Junior Backend Engineer}{London, UK}
+    \begin{rSubsection}{Kerno.io}{Feb 24 - Present}{Senior Software Engineer}{London, UK}
+    \item Leveraged Github's APIs to appropriately project data for different types of users    
+    \item Developed a K8s agent that aggregates events meaningfully for end users
+    \item Implemented Github Actions to build, test PRs and push images on merges to \texttt{main}
+  \end{rSubsection}
+  \begin{rSubsection}{OVO Energy}{Dec 22 - Feb 24}{Software Engineer}{London, UK}
+    \item Lead development of automation tools that transformed manual processes into auditable events
+    \item Optimised CI/CD pipelines reducing average CI times by half and Lambda execution times by 12x 
+    \item Managed team’s transition from CircleCI to Github Actions to narrow developer focus
+    \item Developed Terraform code to deploy Cloud services, becoming proficient in Infrastructure-as-Code
+  \end{rSubsection}
+  \begin{rSubsection}{So Energy}{Dec 21 - Nov 22}{Junior Backend Engineer}{London, UK}
     \item Programmed in Kotlin to develop a core ecosystem of microservices
     \item Worked in payments, authorization and common libraries, amongst others
-    \item Managed docker containers on a k8s engine through GCP
-    \item Efficiently understood the large codebase to positively contribute to the projects
-    \item Review and holistically critique pull requests to uphold high code quality
+    \item Managed docker containers on a K8s engine hosted on GCP
   \end{rSubsection}
-    
-  \begin{rSubsection}{PIMS Associates}{August - November 2021}{Junior Software Engineer}{London, UK}
-    \item Refactored elements of a large Vaadin (Java web framework) web application
-    \item Contributed towards the migration from of the web application from  Vaadin 8 to 21
-    \item Kickstarted the integration of a .net app with the existing Vaadin webapp
-  \end{rSubsection}
-  
-  \begin{rSubsection}{AFS Group Mauritius}{May - August 2020}{Website Developer}{Ebene, Mauritius}
-    \item Overhauled an outdated website whilst enabling easier customization
-    \item Used Django to redesign frontend and backend systems, following industry practices
-    \item Configured databases to support the systems
-    \item Managed deployment through Heroku
-  \end{rSubsection}
-
   
 %  \begin{rSubsection}{SpiRoL}{May - August 2019}{Development Researcher}{Richmond, VA, USA}
 %    \item Collaborated to simulate the egress of groups within an environment when faced with a threat
@@ -141,8 +147,8 @@
 \begin{rSection}{Coding Projects}
     \begin{rSubsection}{Natural Language Processing}{Fall 2020}{}{}
         \item Bot or Human tweet - Given a tweet, determine whether it emanates from human or bot.\\
-           Applied different machine learning techniques on Twitter data. Queried Twitter's API for data
-           and Python ML packages for processing.
+           With Python's ML ecosytem, applied different machine learning techniques by 
+           querying Twitter's API for data.
 
     \end{rSubsection}
 
@@ -168,9 +174,13 @@
   %\end{rSubsection}
 \end{rSection}
 
-\vspace{2em}
+\vspace{1em}
 
-\small For more about me, please see my inkedIn: linkedin.com/in/yanish-rambocus-4a46b7155/
+\small  
+\noindent
+\faLinkedin \hspace{0.2em} \href{https://linkedin.com/in/yanish-rambocus-4a46b7155/}{\underline{Yanish Rambocus}}
+\hspace{431pt}
+\rlap{\faGithub \hspace{0.2em} \href{https://github.com/YanishR}{\underline{YanishR}}}
 
 %----------------------------------------------------------------------------------------
 %	EXAMPLE SECTION
