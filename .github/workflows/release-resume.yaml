@@ -14,27 +14,6 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
 
-      - name: Delete Resume Release 
-        run: |
-          LATEST_RELEASE=$(curl -s \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/YanishR/YanishR/releases/latest)
-
-          RELEASE_ID=$(echo "$LATEST_RELEASE" | jq -r .id)
-
-          echo $RELEASE_ID
-
-          echo "RELEASE_ID=$RELEASE_ID" >> $GITHUB_ENV
-
-      - name: Delete the latest release
-        run: |
-          curl -s -X DELETE \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/YanishR/YanishR/releases/${{ env.RELEASE_ID }}
-
-
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
@@ -47,8 +26,25 @@ jobs:
         with:
           format: "YYYY_MM_DD"
 
+      - name: Set Latest release ID 
+        run: |
+          LATEST_RELEASE=$(curl -s \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/YanishR/YanishR/releases/latest)
 
-      - name: Create release 
+          RELEASE_ID=$(echo "$LATEST_RELEASE" | jq -r .id)
+
+          echo "RELEASE_ID=$RELEASE_ID" >> $GITHUB_ENV
+
+      - name: Delete the latest release
+        run: |
+          curl -s -X DELETE \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/YanishR/YanishR/releases/${{ env.RELEASE_ID }}
+
+      - name: Create new Resume Release 
         uses: xresloader/upload-to-github-release@v1
         with:
           file: "resume/Yanish_Rambocus_Resume.pdf"
@@ -61,10 +57,4 @@ jobs:
           update_release_body: |
               Please find my resume available for download below. 
               _Note: *.tar.gz and *.zip files are automatically uploaded for Github Releases, they are not needed to view the resume._
-      - name: Delete all but Resume Release 
-        uses: sgpublic/delete-release-action@v1.1
-        with:
-          release-drop: true
-          release-keep-count: -1
-        env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
