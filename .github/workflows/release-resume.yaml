@@ -22,7 +22,8 @@ jobs:
 
       - name: Delete Previous Resume release 
         uses: sgpublic/delete-release-action@v1.1
-        env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           release-drop: true
           release-keep-count: -1
