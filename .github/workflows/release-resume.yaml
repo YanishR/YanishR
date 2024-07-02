@@ -30,7 +30,7 @@ jobs:
           update_latest_release: true
           draft: false
           update_release_body: |
-              "Please find my Resume available for download below.\n \
+              Please find my Resume available for download below. 
               *Note: *.tar.gz and *.zip files are automatically uploaded \
-              for Github Releases, they are not needed to view the resume.*"
+              for Github Releases, they are not needed to view the resume.*
 
