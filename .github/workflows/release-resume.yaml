@@ -24,6 +24,7 @@ jobs:
           overwrite: true
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Resume
+          tag_name: main
           update_latest_release: true
           draft: false
           update_release_body: |
