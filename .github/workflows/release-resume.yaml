@@ -17,17 +17,45 @@ jobs:
           working_directory: resume
           root_file: Yanish_Rambocus_Resume.tex
 
+      - name: Date
+        id: date 
+        uses: Kaven-Universe/github-action-current-date-time@v1
+        with:
+          format: "YYYY_MM_DD"
+
+      - name: Create Dummy Release
+        uses: xresloader/upload-to-github-release@v1
+        with:
+          file: "resume/Yanish_Rambocus_Resume.pdf"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          default_release_name: Dummy Release
+          tag_name: dummy
+              
+      - name: Delete All but Dummy Release Pt2
+        uses: sgpublic/delete-release-action@v1.1
+        with:
+          release-drop: true
+          release-keep-count: -1
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create release 
         uses: xresloader/upload-to-github-release@v1
         with:
           file: "resume/Yanish_Rambocus_Resume.pdf"
           overwrite: true
           token: ${{ secrets.GITHUB_TOKEN }}
-          default_release_name: Resume
-          tag_name: main
+          default_release_name: Resume 
+          tag_name: ${{ steps.date.outputs.day }}-${{ steps.date.outputs.month}}-${{ steps.date.outputs.year }}
           update_latest_release: true
           draft: false
           update_release_body: |
-              Please find my Resume available for download below. 
+              Please find my resume available for download below. 
               _Note: *.tar.gz and *.zip files are automatically uploaded for Github Releases, they are not needed to view the resume._
-
+      - name: Delete all but Resume Release 
+        uses: sgpublic/delete-release-action@v1.1
+        with:
+          release-drop: true
+          release-keep-count: -1
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
