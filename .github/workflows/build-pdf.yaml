@@ -16,7 +16,7 @@ jobs:
         with:
           working_directory: resume
           root_file: res.tex
-          args: -jobname=Yanish_Rambocus_Resume
+          args: -jobname=Yanish_Rambocus_Resume.pdf
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
