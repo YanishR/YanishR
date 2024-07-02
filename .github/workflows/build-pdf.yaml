@@ -21,4 +21,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Resume
-          path: resume.pdf
+          path: resume/resume.pdf
