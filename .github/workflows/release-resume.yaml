@@ -20,12 +20,6 @@ jobs:
           working_directory: resume
           root_file: res.tex
 
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v4
-        with:
-          name: Yanish Rambocus Resume
-          path: resume/res.pdf
-
       - name: Create release 
         uses: xresloader/upload-to-github-release@v1
         with:
