@@ -25,5 +25,5 @@ jobs:
         with:
           file: "resume/res.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
-          default_release_name: Yanish Rambocus Resume
+          default_release_name: Resume
           draft: false
