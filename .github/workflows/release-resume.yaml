@@ -1,5 +1,8 @@
 name: Release Resume
 on: 
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -24,3 +27,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Resume
           draft: false
+          default_release_body: Note: *.tar.gz and *.zip files are automatically uploaded for Github Releases, they are not needed to view the resume.
