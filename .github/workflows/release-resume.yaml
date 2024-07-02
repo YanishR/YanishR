@@ -21,7 +21,12 @@ jobs:
         uses: xresloader/upload-to-github-release@v1
         with:
           file: "resume/Yanish_Rambocus_Resume.pdf"
+          overwrite: true
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Resume
+          update_latest_release: true
           draft: false
-          default_release_body: "Note: *.tar.gz and *.zip files are automatically uploaded for Github Releases, they are not needed to view the resume."
+          update_release_body: |
+              Please find my Resume available for download below. 
+              _Note: *.tar.gz and *.zip files are automatically uploaded for Github Releases, they are not needed to view the resume._
+
