@@ -1,5 +1,8 @@
 name: Release Resume
 on: 
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -17,6 +20,18 @@ jobs:
           working_directory: resume
           root_file: Yanish_Rambocus_Resume.tex
 
+      - name: Delete Previous Resume release 
+        uses: sgpublic/delete-release-action@v1.1
+        env: GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release-drop: true
+          release-keep-count: -1
+
+      - name: Date
+        id: date 
+        uses: Kaven-Universe/github-action-current-date-time@v1
+        with:
+          format: "YYYY_MM_DD"
       - name: Create release 
         uses: xresloader/upload-to-github-release@v1
         with:
@@ -24,7 +39,7 @@ jobs:
           overwrite: true
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Resume
-          tag_name: main
+          tag_name: ${{ steps.date.outputs.day }}-${{ steps.date.outputs.month}}-${{ steps.date.outputs.year }}
           update_latest_release: true
           draft: false
           update_release_body: |
