@@ -20,5 +20,5 @@ jobs:
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: Yanish Rambocus Resume
+          name: Resume
           path: resume/Yanish_Rambocus_Resume.pdf
