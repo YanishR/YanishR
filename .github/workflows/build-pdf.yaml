@@ -15,10 +15,10 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           working_directory: resume
-          root_file: res.tex
+          root_file: Yanish_Rambocus_Resume.tex
 
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: Yanish Rambocus Resume
-          path: resume/res.pdf
+          name: Resume
+          path: resume/Yanish_Rambocus_Resume.pdf
