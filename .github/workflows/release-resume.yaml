@@ -30,6 +30,7 @@ jobs:
       - name: Create Dummy Release
         uses: xresloader/upload-to-github-release@v1
         with:
+          file: "resume/Yanish_Rambocus_Resume.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Dummy Release
           tag_name: dummy
@@ -37,6 +38,7 @@ jobs:
       - name: Create Dummy Release Pt2
         uses: xresloader/upload-to-github-release@v1
         with:
+          file: "resume/Yanish_Rambocus_Resume.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Dummy Release Pt2
           tag_name: dummy
