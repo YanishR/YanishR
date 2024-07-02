@@ -1,6 +1,6 @@
 name: Build Resume
 on: 
-  pull_requests:
+  pull_request:
     branches:
       - main
 
