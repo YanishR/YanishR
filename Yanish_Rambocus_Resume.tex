@@ -1,0 +1,197 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.2in,top=0.2in,right=0.2in,bottom=0.25in]{geometry} % Document margins
+\usepackage{soul}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+
+\name{Yanish Rambocus} % Your name
+ % Your address
+
+\capsdef{////}{\scshape}{1.3pt}{5pt}{1pt}
+\address{\caps{55 Charteris Road, London, N4 3AA}}
+\resetso
+\sodef\an{}{.14mm}{1.35mm}{15mm}
+\address{\an{+44 7951 255607 $|$ yanishrambocus@gmail.com}} % Your phone number and email
+
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\vspace{-2.1em}
+\begin{rSection}{Profile}   
+    Software Engineer for three years developing business applications deployed to the Cloud,  mainly in Kotlin 
+    and Terraform. Working for companies of different sizes and stages, I have led software projects, 
+    prolifically contributed to codebases and mentored Junior developers, improving my technical 
+    and interpersonal skills. I am always keen to learn new technologies.
+    Seeking the right opportunity to positively contribute while growing as an Engineer.\\
+    \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
+    \vspace{1.5mm}\\
+    %\begin{tabular}{ @{\hspace{3mm}} >{\bfseries}l @{\hspace{13.5ex}} l }
+    \begin{tabular}{ @{\hspace{3mm}} l @{\hspace{13.5ex}} l }
+        \vspace{.5mm}
+        \large{\caps{Languages}} & Kotlin, Python, Java\\
+        \vspace{.5mm}
+        \large{\caps{Cloud Infrastructure}} & AWS, GCP, Terraform \\
+        \vspace{.5mm}
+        \large{\caps{Databases}} & PostgreSQL, DynamoDB\\
+        \vspace{.5mm}
+        \large{\caps{Messaging Queues}} & Kafka, SQS, Pub/Sub\\
+        \vspace{.5mm}
+        \large{\caps{Other Technologies}} & AWS ECS \& Lambda, Kubernetes, Quarkus\\
+        & Github Actions, CircleCI, Keycloak\\
+    \end{tabular}
+
+    \vspace{-1.5mm}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+    \begin{rSubsection}{Kerno.io}{Feb 24 - Present}{Senior Software Engineer}{London, UK}
+    \item Leveraged Github's APIs to appropriately project data for different types of users    
+    \item Developed a K8s agent that aggregates events meaningfully for end users
+    \item Implemented Github Actions to build, test PRs and push images on merges to \texttt{main}
+  \end{rSubsection}
+  \begin{rSubsection}{OVO Energy}{Dec 22 - Feb 24}{Software Engineer}{London, UK}
+    \item Lead development of automation tools that transformed manual processes into auditable events
+    \item Optimised CI/CD pipelines reducing average CI times by half and Lambda execution times by 12x 
+    \item Managed team’s transition from CircleCI to Github Actions to narrow developer focus
+    \item Developed Terraform code to deploy Cloud services, becoming proficient in Infrastructure-as-Code
+  \end{rSubsection}
+  \begin{rSubsection}{So Energy}{Dec 21 - Nov 22}{Junior Backend Engineer}{London, UK}
+    \item Programmed in Kotlin to develop a core ecosystem of microservices
+    \item Worked in payments, authorization and common libraries, amongst others
+    \item Managed docker containers on a K8s engine hosted on GCP
+  \end{rSubsection}
+  
+%  \begin{rSubsection}{SpiRoL}{May - August 2019}{Development Researcher}{Richmond, VA, USA}
+%    \item Collaborated to simulate the egress of groups within an environment when faced with a threat
+%    \item Designed and implemented input system of application to ease customization of our simulation
+%    \item Highly engaged with C++ and paradigms of the language, used XML as input format
+%    \item Implemented triangulation for path planning of agents
+%  \end{rSubsection}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+    \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
+    \begin{rSubsection}{University of Richmond}{May 2021}{BSc in Computer Science, \large{\caps{ GPA:}} 3.18}{Richmond, VA, USA}
+    \item  Enrolled as a Science Scholar with a full tuition scholarship.
+    \item \caps{Coursework: } Data and Discrete Structures, Computer Architecture, Algorithms,\\
+        Design and implementation of Programming Languages, Computer Security, NLP, Artificial Intelligence.
+    \item \caps{Mathematics Coursework: } Multivariate Calculus, Linear Algebra, Real Analysis.
+    \item \caps{Business Coursework: } Introduction to Financial and Managerial Accounting, Business Statistics.
+    \end{rSubsection}
+
+\end{rSection}
+
+    
+
+%\begin{rSubsection}{Photon Infotech, Inc}{June - August 2018}{Development Intern}{Deerfield, IL, USA}
+ % \item Mentored by industry experts on creating a successful e-commerce platform 
+  %\item Grasped and coded key tests to kickstart online store for the company
+  %\item Used and worked extensively with commertools SDK and Java's Spring Framework
+  %\item Familiarized myself with servers and back-end programming
+%\end{rSubsection}
+
+%------------------------------------------------
+
+
+%\begin{rSubsection}{Schneider Electric}{January - March 2017}{Testing Intern}{Bangalore, India}
+ % \vspace{-1mm}
+  %\item Placed in Testing team to conduct unit tests
+  %\item Conducted Test Driven Development
+%\end{rSubsection}
+
+%------------------------------------------------
+
+
+\begin{rSection}{Coding Projects}
+    \begin{rSubsection}{Natural Language Processing}{Fall 2020}{}{}
+        \item Bot or Human tweet - Given a tweet, determine whether it emanates from human or bot.\\
+           With Python's ML ecosytem, applied different machine learning techniques by 
+           querying Twitter's API for data.
+
+    \end{rSubsection}
+
+    \begin{rSubsection}{Artificial Intelligence}{Spring 2020}{}{}
+        \item Chess - Calculate next best move using H-minimax. \\
+            Coded a chess game to analyze our program that calculates the next best move for a player.
+        \item Sentiment Analysis - Determine a review's sentiment.\\
+            Applied Python Machine Learning tools such as sklearn and numpy on IMDB  datasets
+    \end{rSubsection}
+
+    %\begin{rSubsection}{Expense Tracking Website}{June - August 2018}{Created web app to conveniently track expenses}{}
+    %\item Used Node.js and Express.js to create RESTful APIs
+    %\item Deployed a MongoDB database to access user information
+    %\item Rendered static webpages with Jade template engine
+  %\end{rSubsection}
+
+  %\pagebreak
+%\vspace{-1mm}
+  %\begin{rSubsection}{Stock Trading Platform}{May 2017}{Created a web app to trade stocks}{}
+    %\item Incorporated HTML, CSS, Python's Django and Flask frameworks and SQLite to create website to trade stocks.
+    %\item Expanded knowledge of RESTful APIs, how to use them
+    %\item Stocks and money could not be actually traded
+  %\end{rSubsection}
+\end{rSection}
+
+\vspace{1em}
+
+\small  
+\noindent
+\faLinkedin \hspace{0.2em} \href{https://linkedin.com/in/yanish-rambocus-4a46b7155/}{\underline{Yanish Rambocus}}
+\hspace{431pt}
+\rlap{\faGithub \hspace{0.2em} \href{https://github.com/YanishR}{\underline{YanishR}}}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
