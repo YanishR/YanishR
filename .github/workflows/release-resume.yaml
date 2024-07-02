@@ -29,4 +29,4 @@ jobs:
           default_release_name: Resume
           update_latest_release: true
           draft: false
-          default_release_body: "Please find my Resume available for download below. __Note: *.tar.gz and *.zip files are automatically uploaded for Github Releases, they are not needed to view the resume.__"
+          update_release_body: "Please find my Resume available for download below. __Note: *.tar.gz and *.zip files are automatically uploaded for Github Releases, they are not needed to view the resume.__"
