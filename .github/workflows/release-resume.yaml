@@ -14,6 +14,11 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
 
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: resume
+          root_file: Yanish_Rambocus_Resume.tex
 
       - name: Date
         id: date 
@@ -25,7 +30,7 @@ jobs:
       - name: Create Dummy Release
         uses: xresloader/upload-to-github-release@v1
         with:
-          file: "resume/Yanish_Rambocus_Resume.tex"
+          file: "resume/Yanish_Rambocus_Resume.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Dummy Release
           tag_name: dummy
@@ -33,7 +38,7 @@ jobs:
       - name: Create Dummy Release Pt2
         uses: xresloader/upload-to-github-release@v1
         with:
-          file: "resume/Yanish_Rambocus_Resume.tex"
+          file: "resume/Yanish_Rambocus_Resume.pdf"
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Dummy Release Pt2
           tag_name: dummy
@@ -49,7 +54,7 @@ jobs:
       - name: Create release 
         uses: xresloader/upload-to-github-release@v1
         with:
-          file: "resume/Yanish_Rambocus_Resume.tex"
+          file: "resume/Yanish_Rambocus_Resume.pdf"
           overwrite: true
           token: ${{ secrets.GITHUB_TOKEN }}
           default_release_name: Resume 
