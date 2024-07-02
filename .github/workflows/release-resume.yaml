@@ -1,5 +1,8 @@
 name: Release Resume
 on: 
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -10,6 +13,25 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
+
+      - name: Get the latest release
+        id: get_latest_release
+        run: |
+          LATEST_RELEASE=$(curl -s \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/YanishR/YanishR/releases/latest)
+
+          RELEASE_ID=$(echo "$LATEST_RELEASE" | jq -r .id)
+
+          echo "RELEASE_ID=$RELEASE_ID" >> $GITHUB_ENV
+
+      - name: Delete the latest release
+        run: |
+          curl -s -X DELETE \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/YanishR/YanishR/releases/${{ env.RELEASE_ID }}
 
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
@@ -31,6 +53,12 @@ jobs:
           default_release_name: Dummy Release
           tag_name: dummy
               
+      - name: Delete Release
+        run: |
+          curl -X GET --location "https://api.github.com/repos/YanishR/YanishR/releases/latest" \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+          -d '{"tag_name":"'"$VERSION"'","target_commitish":"main","name":"Resume","draft":false,"prerelease":false,"generate_release_notes":true}'
       - name: Delete All but Dummy Release Pt2
         uses: sgpublic/delete-release-action@v1.1
         with:
