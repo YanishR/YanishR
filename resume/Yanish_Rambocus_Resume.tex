@@ -38,11 +38,11 @@
 \name{Yanish Rambocus} % Your name
  % Your address
 
-\capsdef{////}{\scshape}{1.3pt}{5pt}{1pt}
+\capsdef{////}{\scshape}{1.3pt}{5.2pt}{1pt}
 \address{\caps{55 Charteris Road, London, N4 3AA}}
 \resetso
-\sodef\an{}{.14mm}{1.35mm}{15mm}
-\address{\an{+44 7951 255607 $|$ yanishrambocus@gmail.com}} % Your phone number and email
+\sodef\an{}{.12mm}{1.25mm}{8mm}
+\address{\an{+ 44 7951 255607 $|$ yanishrambocus@gmail.com}} % Your phone number and email
 
 
 \begin{document}
@@ -52,25 +52,27 @@
 
 \vspace{-2.1em}
 \begin{rSection}{Profile}   
-    Software Engineer since Aug '21 developing business systems deployed to the Cloud,  mainly in Kotlin 
-    and Terraform. Working for companies of different sizes and stages, I have led software projects, 
-    prolifically contributed to codebases and mentored Junior developers, improving my technical 
-    and interpersonal skills.\\
-    Seeking the right opportunity to positively contribute while growing as an Engineer.
+    Software Engineer since Aug '21 designing, developing and maintaining business systems deployed to Cloud Infrastructure.
+    Recently, I have been focusing on the DevOps side of Engineering, transitioning my team
+    from manual deployments to an automated IaC pipeline leveraging Pulumi, Github Actions and the Gradle/Kotlin ecosystem.
     \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
     \vspace{3.1mm}\\
     \begin{tabular}{ @{\hspace{8mm}} l @{\hspace{13.5ex}} l }
         \vspace{1.1mm}
         \large{\caps{Languages}} & Kotlin, Python, Java\\
         \vspace{1.1mm}
-        \large{\caps{Cloud Infrastructure}} & AWS, GCP, Terraform \\
+        \large{\caps{Cloud Resource Providers}} & AWS, GCP, Kubernetes\\
+        \vspace{1.1mm}
+        \large{\caps{Infrastructure-as-Code}} & Terraform, Pulumi \\
+        \vspace{1.1mm}
+        \large{\caps{CI/CD}} & Github Actions, CircleCI  \\
         \vspace{1.1mm}
         \large{\caps{Databases}} & PostgreSQL, DynamoDB\\
         \vspace{1.1mm}
-        \large{\caps{Messaging Queues}} & Kafka, SQS, Pub/Sub\\
+        \large{\caps{Messaging Queues}} & Kafka, SQS, Google Pub/Sub\\
         \vspace{1.1mm}
-        \large{\caps{Other Technologies}} & AWS ECS \& Lambda, Kubernetes, Quarkus\\
-        & Github Actions, CircleCI, Keycloak\\
+        \large{\caps{Other Technologies}} & AWS ECS \& Lambda, Quarkus\\
+        & Keycloak\\
     \end{tabular}
 
     \vspace{-1.5mm}
@@ -82,9 +84,10 @@
 
 \begin{rSection}{Work Experience}
     \begin{rSubsection}{Kerno.io}{March 24 - Present}{Senior Software Engineer}{London, UK}
-    \item Leveraged Github's APIs to appropriately project data to personalized visualizations
-    \item Developed a K8s agent that transmits data to services in our cluster, which then groups events by context
-    \item Implemented Github Actions to build, test PRs and push images on merges to \texttt{main}
+    \item Transitioned team from manual Kubernetes and AWS resource provisioning to automated
+        IaC pipelines for different environments
+    \item Developed and maintained a Kubernetes observability agent that works out-of-the-box
+    \item Ideated and created Docker and Helm installers for our observability software
   \end{rSubsection}
   \begin{rSubsection}{OVO Energy}{Nov 22 - Feb 24}{Software Engineer}{London, UK}
     \item Lead development of automation tools that transformed manual processes into auditable events
