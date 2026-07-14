@@ -76,11 +76,11 @@
         \vspace{1.1mm}
         \large{\caps{IaC \& CI/CD}} & Terraform, Pulumi, Github Actions, CircleCI\\
         \vspace{1.1mm}
-        \large{\caps{Observability}} & Monitoring, Metrics, Logging, Alerting\\
+        \large{\caps{Observability}} & Prometheus, Grafana, OpenTelemetry\\
         \vspace{1.1mm}
-        \large{\caps{Data \& Messaging}} & PostgreSQL, DynamoDB, Kafka, SQS, Pub/Sub\\
+        \large{\caps{Data \& Messaging}} & PostgreSQL, DynamoDB, Redis, Kafka, SQS, Pub/Sub\\
         \vspace{1.1mm}
-        \large{\caps{Other}} & Microservices, Quarkus, Keycloak\\
+        \large{\caps{Other}} & Linux, Quarkus, Keycloak\\
     \end{tabular}
 
     \vspace{-1.5mm}
@@ -92,11 +92,11 @@
 
 \begin{rSection}{Work Experience}
     \begin{rSubsection}{Lorica Energy}{March 26 - Present}{Founding Engineer}{London, UK}
-    \item Sole engineer building the platform end-to-end --- a pnpm/Turborepo monorepo (React 19, tRPC, Prisma/PostgreSQL) deployed on Railway, Vercel and Neon
-    \item Amalgamated 15+ external UK datasets (Companies House, HM Land Registry, EPC, OS UPRN, PVGIS, VOA) into a unified, automated site- and deal-assessment engine
-    \item Built asynchronous job infrastructure on BullMQ and Redis for site enrichment and bulk imports, with rate limiting, retries and Slack failure alerting
-    \item Developed a LangGraph multi-agent risk-assessment system with Zod-validated schemas to automate investment-grade underwriting of renewable-energy projects
-    \item Established the engineering foundations --- domain-driven architecture, coding standards, type-safety CI gates and staged deployment environments
+    \item Sole founding engineer building Lorica's origination platform end-to-end (TypeScript monorepo, cloud-deployed)
+    \item Built an automated deal-assessment engine that cut opportunity sourcing from days to hours
+    \item Amalgamated 15+ external data sources, modelling the relationships between them to surface bankable deal-flow insights
+    \item Developed a LangGraph multi-agent AI system automating investment-grade risk assessment and underwriting
+    \item Established the engineering foundations --- architecture, coding standards, CI type-safety gates and staged deploys
   \end{rSubsection}
     \begin{rSubsection}{Kerno.io}{March 24 - March 26}{Senior Software Engineer}{London, UK}
     \item Automated Kubernetes and AWS provisioning by building multi-environment IaC pipelines\\
@@ -111,7 +111,8 @@
     \item Provisioned cloud services with Terraform (Infrastructure-as-Code), standardising deployments across environments
   \end{rSubsection}
   \begin{rSubsection}{So Energy}{Dec 21 - Nov 22}{Junior Backend Engineer}{London, UK}
-    \item Automated origination for prospective solar-panel installations, and integrated payments and authorization services
+    \item Automated origination of new solar-panel installation opportunities, expanding the customer funnel
+    \item Integrated payment and authorization services and maintained shared libraries across backend microservices
     \item Operated microservices on Kubernetes (GKE) on Google Cloud Platform
   \end{rSubsection}
 
