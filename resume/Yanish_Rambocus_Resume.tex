@@ -47,29 +47,40 @@
 
 \begin{document}
 %----------------------------------------------------------------------------------------
+%	TARGET TITLE
+%----------------------------------------------------------------------------------------
+
+\centerline{\large \scshape Platform \& DevOps Engineer}
+\vspace{-1.8em}
+
+%----------------------------------------------------------------------------------------
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\vspace{-2.1em}
-\begin{rSection}{Profile}   
-    Software Engineer since Aug '21 designing, developing and maintaining business systems deployed to Cloud Infrastructure.
-    Recently focusing on the DevOps side of Engineering, having transitioned my team from manual deployments to an 
-    automated IaC pipeline leveraging Pulumi, Github Actions and the Gradle/Kotlin ecosystem.
+\begin{rSection}{Profile}
+    Platform \& DevOps Engineer with 5 years' experience building and operating cloud infrastructure on AWS and GCP.
+    I specialise in Kubernetes, Infrastructure-as-Code (Terraform, Pulumi) and CI/CD automation, with a track record
+    of replacing manual deployments with self-service, multi-environment platform pipelines and observability tooling.
     \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
     \vspace{3.1mm}\\
+    % NOTE (Yanish): add tool-specific keywords below ONLY if genuinely true for your work —
+    % e.g. Prometheus, Grafana, OpenTelemetry, Datadog, ArgoCD, GitOps, service mesh (Istio),
+    % Vault, SLO/SLI, on-call, incident response. These are high-value ATS terms for platform/SRE roles.
     \begin{tabular}{ @{\hspace{8mm}} l @{\hspace{13.5ex}} l }
         \vspace{1.1mm}
-        \large{\caps{Languages}} & Kotlin, Python, Java\\
+        \large{\caps{Languages}} & Kotlin, Python, Java, Bash\\
         \vspace{1.1mm}
-        \large{\caps{Cloud Providers}} & AWS, GCP, Kubernetes\\
+        \large{\caps{Cloud}} & AWS, GCP, EKS, GKE, ECS, Lambda\\
+        \vspace{1.1mm}
+        \large{\caps{Containers}} & Kubernetes, Docker, Helm\\
         \vspace{1.1mm}
         \large{\caps{IaC \& CI/CD}} & Terraform, Pulumi, Github Actions, CircleCI\\
         \vspace{1.1mm}
-        \large{\caps{Databases}} & PostgreSQL, DynamoDB\\
+        \large{\caps{Observability}} & Monitoring, Metrics, Logging, Alerting\\
         \vspace{1.1mm}
-        \large{\caps{Messaging Queues}} & Kafka, SQS, Google Pub/Sub\\
+        \large{\caps{Data \& Messaging}} & PostgreSQL, DynamoDB, Kafka, SQS, Pub/Sub\\
         \vspace{1.1mm}
-        \large{\caps{Other Technologies}} & AWS ECS \& Lambda, Quarkus, Keycloak\\
+        \large{\caps{Other}} & Microservices, Quarkus, Keycloak\\
     \end{tabular}
 
     \vspace{-1.5mm}
@@ -81,22 +92,22 @@
 
 \begin{rSection}{Work Experience}
     \begin{rSubsection}{Kerno.io}{March 24 - Present}{Senior Software Engineer}{London, UK}
-    \item Kickstarted AI-native testing tool with the implementation repository indexation with \texttt{CocoIndex}
-    \item Transitioned team from manual K8s and AWS resource management to automated\\
-        IaC pipelines for different environments
-    \item Developed and maintained a Kubernetes observability agent that works out-of-the-box
-    \item Ideated and created Docker and Helm installers for our Kubernetes observability agent
+    \item Kickstarted an AI-native testing tool, building repository indexation with \texttt{CocoIndex}
+    \item Automated Kubernetes and AWS provisioning by building multi-environment IaC pipelines\\
+        (Terraform, Pulumi, Github Actions), replacing manual resource management
+    \item Built and operated a zero-config Kubernetes observability agent providing out-of-the-box monitoring and metrics
+    \item Designed and shipped Docker and Helm installers for the observability agent, streamlining customer deployment
   \end{rSubsection}
   \begin{rSubsection}{OVO Energy}{Nov 22 - Feb 24}{Software Engineer}{London, UK}
-    \item Lead development of automation tools that transformed manual processes into auditable events
-    \item Optimised CI/CD pipelines reducing average CI times by half and Lambda execution times by 12x 
-    \item Managed team’s transition from CircleCI to Github Actions to narrow developer focus
-    \item Developed Terraform code to deploy Cloud services, becoming proficient in Infrastructure-as-Code
+    \item Led development of automation tooling that turned manual processes into auditable, event-driven workflows
+    \item Optimised CI/CD pipelines (Github Actions), cutting average CI times by 50\% and Lambda execution times by 12x
+    \item Migrated the team's CI/CD from CircleCI to Github Actions, streamlining developer workflow
+    \item Provisioned cloud services with Terraform (Infrastructure-as-Code), standardising deployments across environments
   \end{rSubsection}
   \begin{rSubsection}{So Energy}{Dec 21 - Nov 22}{Junior Backend Engineer}{London, UK}
-    \item Automated lead generation for customers interested in installing Solar Panels
-    \item Developed features for payments and authorization services, maintained common libraries
-    \item Managed microservices running on Kubernetes hosted on GCP
+    \item Automated lead generation for prospective solar-panel customers
+    \item Built payments and authorization service features and maintained shared internal libraries
+    \item Operated microservices on Kubernetes (GKE) on Google Cloud Platform
   \end{rSubsection}
 
 \end{rSection}
@@ -106,35 +117,16 @@
 
 \begin{rSection}{Education}
     \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
-    \begin{rSubsection}{University of Richmond}{May 2021}{BSc in Computer Science, \large{\caps{ GPA:}} 3.18}{Richmond, VA, USA}
-    \item  Enrolled as a Science Scholar with a full tuition scholarship.
-    \item \caps{Coursework: } Data and Discrete Structures, Computer Architecture, Algorithms,\\
-        Design and implementation of Programming Languages, Computer Security, NLP, Artificial Intelligence.
-    \item \caps{Mathematics Coursework: } Multivariate Calculus, Linear Algebra, Real Analysis.
-    \end{rSubsection}
-
-\end{rSection}
-
-\begin{rSection}{Coding Projects}
-    \begin{rSubsection}{Natural Language Processing}{Fall 2020}{}{}
-        \item Bot or Human tweet - Given a tweet, determine whether it emanates from human or bot.\\
-           Leveraged Python's ML ecosytem to apply various machine learning techniques,
-           querying Twitter's API for data.
-
-    \end{rSubsection}
-
-    \begin{rSubsection}{Artificial Intelligence}{Spring 2020}{}{}
-        \item Chess - Calculate next best move using H-minimax. \\
-            Developed a next-best-move program, as well as a Chess game to analyze the engine's performance.
-        \item Sentiment Analysis - Determine a review's sentiment.\\
-            Applied Python ML tools such as \texttt{sklearn} and \texttt{numpy} on IMDB datasets
+    \begin{rSubsection}{University of Richmond}{May 2021}{BSc in Computer Science}{Richmond, VA, USA}
+    \item Enrolled as a Science Scholar with a full tuition scholarship.
+    \item \caps{Relevant coursework: } Algorithms, Computer Architecture, Computer Security, Artificial Intelligence.
     \end{rSubsection}
 
 \end{rSection}
 
 \vspace{1.4em}
 
-\small  
+\small
 \noindent
 \faLinkedin \hspace{0.2em} \href{https://linkedin.com/in/yanish-rambocus-4a46b7155/}{\underline{Yanish Rambocus}}
 \hspace{150pt}
