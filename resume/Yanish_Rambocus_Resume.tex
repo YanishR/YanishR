@@ -38,8 +38,6 @@
 \name{Yanish Rambocus} % Your name
  % Your address
 
-\capsdef{////}{\scshape}{1.3pt}{5.2pt}{1pt}
-\address{\caps{55 Charteris Road, London, N4 3AA}}
 \resetso
 \sodef\an{}{.12mm}{1.25mm}{8mm}
 \address{\an{+ 44 7951 255607 $|$ yanishrambocus@gmail.com}} % Your phone number and email
@@ -50,26 +48,28 @@
 %	TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
-\vspace{-2.1em}
-\begin{rSection}{Profile}   
-    Software Engineer since Aug '21 designing, developing and maintaining business systems deployed to Cloud Infrastructure.
-    Recently focusing on the DevOps side of Engineering, having transitioned my team from manual deployments to an 
-    automated IaC pipeline leveraging Pulumi, Github Actions and the Gradle/Kotlin ecosystem.
+\begin{rSection}{Profile -- {\footnotesize\mdseries Platform Engineer}}
+    Software Engineer for the past 5 years, focusing on Infrastructure and Platform provisioning on AWS and GCP, predominantly with Kubernetes.
+    I have built from scratch and maintained complex systems and self-serve deployment pipelines across multi-cloud environments
+    using a blend of CI/CD and IaC tools. While building outcome-led features, I also mentor and enable other developers to ship code faster.
+    My experience spans large corporations to fast-paced startups, allowing me to strike the right balance between speed and reliability.
     \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
     \vspace{3.1mm}\\
     \begin{tabular}{ @{\hspace{8mm}} l @{\hspace{13.5ex}} l }
         \vspace{1.1mm}
-        \large{\caps{Languages}} & Kotlin, Python, Java\\
+        \large{\caps{Languages}} & Kotlin, Python, Java, TypeScript, Bash\\
         \vspace{1.1mm}
-        \large{\caps{Cloud Providers}} & AWS, GCP, Kubernetes\\
+        \large{\caps{Cloud}} & AWS, GCP, Vercel\\
         \vspace{1.1mm}
-        \large{\caps{IaC \& CI/CD}} & Terraform, Pulumi, Github Actions, CircleCI\\
+        \large{\caps{Containers}} & Kubernetes, Docker, Helm, ECS\\
         \vspace{1.1mm}
-        \large{\caps{Databases}} & PostgreSQL, DynamoDB\\
+        \large{\caps{I}{\normalfont\normalsize a}\caps{C \& CI/CD}} & Terraform, Pulumi, GitHub Actions, CircleCI\\
         \vspace{1.1mm}
-        \large{\caps{Messaging Queues}} & Kafka, SQS, Google Pub/Sub\\
+        \large{\caps{Observability}} & Prometheus, Grafana, OpenTelemetry\\
         \vspace{1.1mm}
-        \large{\caps{Other Technologies}} & AWS ECS \& Lambda, Quarkus, Keycloak\\
+        \large{\caps{Data \& Messaging}} & PostgreSQL, DynamoDB, Redis, Kafka, SQS, Pub/Sub\\
+        \vspace{1.1mm}
+        \large{\caps{Other}} & Linux, Quarkus, Keycloak\\
     \end{tabular}
 
     \vspace{-1.5mm}
@@ -80,23 +80,29 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Work Experience}
-    \begin{rSubsection}{Kerno.io}{March 24 - Present}{Senior Software Engineer}{London, UK}
-    \item Kickstarted AI-native testing tool with the implementation repository indexation with \texttt{CocoIndex}
-    \item Transitioned team from manual K8s and AWS resource management to automated\\
-        IaC pipelines for different environments
-    \item Developed and maintained a Kubernetes observability agent that works out-of-the-box
-    \item Ideated and created Docker and Helm installers for our Kubernetes observability agent
+    \begin{rSubsection}{Lorica Energy}{Mar 2026 - Present}{Founding Engineer}{London, UK}
+    \item Sole engineer owning full cloud infrastructure and delivery stack for TypeScript monorepo
+    \item Established engineering foundations around architecture, standards, CI/CD, multi-environment deployment
+    \item Built automated deal-assessment engine that cut each assessment from a week to under an hour
+    \item Integrated 8 public datasets, modelling relationships between them to surface bankable deal-flow insights
+    \item Developed multi-agent AI system automating investment-grade risk assessment and underwriting
   \end{rSubsection}
-  \begin{rSubsection}{OVO Energy}{Nov 22 - Feb 24}{Software Engineer}{London, UK}
-    \item Lead development of automation tools that transformed manual processes into auditable events
-    \item Optimised CI/CD pipelines reducing average CI times by half and Lambda execution times by 12x 
-    \item Managed team’s transition from CircleCI to Github Actions to narrow developer focus
-    \item Developed Terraform code to deploy Cloud services, becoming proficient in Infrastructure-as-Code
+    \begin{rSubsection}{Kerno.io}{Mar 2024 - Mar 2026}{Senior Software Engineer}{London, UK}
+    \item Automated Kubernetes and AWS provisioning via IaC pipelines, cutting 2-day job to 10 minutes
+    \item Owned real-time container resource-metrics functionality of zero-config Kubernetes observability agent
+    \item Built Docker and Helm installers for self-serve onboarding, increasing installs from one to several a day
+    \item Pioneered repository-indexing layer that powered company's pivot to AI-native testing product
   \end{rSubsection}
-  \begin{rSubsection}{So Energy}{Dec 21 - Nov 22}{Junior Backend Engineer}{London, UK}
-    \item Automated lead generation for customers interested in installing Solar Panels
-    \item Developed features for payments and authorization services, maintained common libraries
-    \item Managed microservices running on Kubernetes hosted on GCP
+  \begin{rSubsection}{OVO Energy}{Nov 2022 - Feb 2024}{Software Engineer}{London, UK}
+    \item Led development of automation tooling that turned manual processes into auditable, event-driven workflows
+    \item Optimised CI/CD pipelines, cutting average CI times by 50\% and Lambda execution times by 12x
+    \item Migrated team's CI/CD from CircleCI to GitHub Actions, streamlining developer workflow
+    \item Owned team's cloud infrastructure with Terraform, and mentored teammates through deployments
+  \end{rSubsection}
+  \begin{rSubsection}{So Energy}{Dec 2021 - Nov 2022}{Junior Backend Engineer}{London, UK}
+    \item Operated 10 backend microservices on GKE
+    \item Automated solar-panel lead generation, cutting time-to-first-contact from a week to a day
+    \item Integrated payment and authorisation services; maintained shared libraries across backend microservices
   \end{rSubsection}
 
 \end{rSection}
@@ -106,38 +112,19 @@
 
 \begin{rSection}{Education}
     \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
-    \begin{rSubsection}{University of Richmond}{May 2021}{BSc in Computer Science, \large{\caps{ GPA:}} 3.18}{Richmond, VA, USA}
-    \item  Enrolled as a Science Scholar with a full tuition scholarship.
-    \item \caps{Coursework: } Data and Discrete Structures, Computer Architecture, Algorithms,\\
-        Design and implementation of Programming Languages, Computer Security, NLP, Artificial Intelligence.
-    \item \caps{Mathematics Coursework: } Multivariate Calculus, Linear Algebra, Real Analysis.
-    \end{rSubsection}
-
-\end{rSection}
-
-\begin{rSection}{Coding Projects}
-    \begin{rSubsection}{Natural Language Processing}{Fall 2020}{}{}
-        \item Bot or Human tweet - Given a tweet, determine whether it emanates from human or bot.\\
-           Leveraged Python's ML ecosytem to apply various machine learning techniques,
-           querying Twitter's API for data.
-
-    \end{rSubsection}
-
-    \begin{rSubsection}{Artificial Intelligence}{Spring 2020}{}{}
-        \item Chess - Calculate next best move using H-minimax. \\
-            Developed a next-best-move program, as well as a Chess game to analyze the engine's performance.
-        \item Sentiment Analysis - Determine a review's sentiment.\\
-            Applied Python ML tools such as \texttt{sklearn} and \texttt{numpy} on IMDB datasets
+    \begin{rSubsection}{University of Richmond}{May 2021}{BSc in Computer Science}{Virginia, USA}
+    \item[] Science Scholar with full tuition scholarship
+    \item[] \caps{Relevant coursework: } DSA, Computer Architecture \& Security, AI, ML
     \end{rSubsection}
 
 \end{rSection}
 
 \vspace{1.4em}
 
-\small  
+\small
 \noindent
 \faLinkedin \hspace{0.2em} \href{https://linkedin.com/in/yanish-rambocus-4a46b7155/}{\underline{Yanish Rambocus}}
 \hspace{150pt}
-\rlap{{\scriptsize \emph{This PDF is written in LaTeX and produced by a GHA workflow hosted  on }}\faGithub \hspace{0.2em} \href{https://github.com/YanishR}{\underline{YanishR}}}
+\rlap{{\scriptsize \emph{This PDF is written in LaTeX and produced by a GHA workflow hosted on }}\faGithub \hspace{0.2em} \href{https://github.com/YanishR}{\underline{YanishR}}}
 
 \end{document}
