@@ -59,7 +59,7 @@
         \vspace{1.1mm}
         \large{\caps{Languages}} & Kotlin, Python, Java, TypeScript, Bash\\
         \vspace{1.1mm}
-        \large{\caps{Cloud}} & AWS, GCP, Vercel\\
+        \large{\caps{Cloud}} & AWS, GCP, Azure, Vercel\\
         \vspace{1.1mm}
         \large{\caps{Containers}} & Kubernetes, Docker, Helm, ECS\\
         \vspace{1.1mm}
@@ -90,22 +90,22 @@
     \item Developed multi-agent AI system automating investment-grade risk assessment and underwriting
   \end{rSubsection}
     \begin{rSubsection}{Kerno.io}{Mar 2024 - Mar 2026}{Senior Software Engineer}{London, UK}
-    \item Automated Kubernetes and AWS provisioning via Terraform-driven IaC pipelines, cutting 2-day job to 10 minutes
-    \item Authored reusable Terraform modules across multiple AWS accounts, standardising provisioning and eliminating configuration drift
+    \item Automated Kubernetes and AWS provisioning by containerising the Pulumi program into an image published to AWS ECR and driving it through GitHub Actions -- making provisioning fully reproducible and cutting a 2-day job to 10 minutes
+    \item Authored reusable Pulumi components across multiple AWS accounts, standardising provisioning and eliminating configuration drift
     \item Owned real-time container resource-metrics functionality of zero-config Kubernetes observability agent
-    \item Built Docker and Helm installers for self-serve onboarding, increasing installs from one to several a day
+    \item Automated publishing of Docker and Helm installers through CI/CD, removing manual release steps and errors while growing self-serve installs from one to several a day
     \item Pioneered repository-indexing layer that powered company's pivot to AI-native testing product
-    \item As a senior engineer, led technical design for core agent components and mentored teammates to raise delivery velocity
+    \item Owned onboarding for new engineers, mentoring them to productivity across Kotlin, Pulumi and AWS
   \end{rSubsection}
   \begin{rSubsection}{OVO Energy}{Nov 2022 - Feb 2024}{Software Engineer}{London, UK}
-    \item Took ownership of team onboarding and upskilling, mentoring several junior engineers from zero Terraform experience to independently shipping production infrastructure
+    \item Took ownership of team onboarding and upskilling, mentoring several junior engineers from no Terraform to independently shipping production infrastructure
     \item Led multiple cross-functional initiatives, aligning stakeholders across product and engineering to replace manual processes with auditable, event-driven automation tooling
-    \item Owned the team's AWS estate end-to-end -- Lambda, DynamoDB, SQS, S3 -- codified in Terraform, turning ad-hoc setup into a repeatable, self-serve process
-    \item Optimised CI/CD pipelines, cutting average CI times by 50\% and Lambda execution times by 12x
-    \item Migrated team's CI/CD from CircleCI to GitHub Actions, streamlining developer workflow
+    \item Owned the team's infrastructure end-to-end -- AWS (Lambda, ECS, SQS, DynamoDB, S3), Aiven-managed Kafka and GCP -- codified in Terraform, turning ad-hoc setup into a repeatable, self-serve process
+    \item Optimised CI/CD pipelines, cutting average CI/CD times by 50\% and Lambda execution times by 12x
+    \item Migrated team's CI/CD from CircleCI to GitHub Actions, cutting tool sprawl and standardising on a single, less error-prone pipeline
   \end{rSubsection}
   \begin{rSubsection}{So Energy}{Dec 2021 - Nov 2022}{Junior Backend Engineer}{London, UK}
-    \item Standardised deployment of 10 GKE microservices via templated Helm charts, eliminating manual errors
+    \item Standardised deployment of 10 microservices on Kubernetes (GCP) via templated Helm charts, eliminating manual errors
     \item Containerised backend services with Docker and wired them into CI/CD pipelines for repeatable, low-risk releases
     \item Automated solar-panel lead generation, cutting time-to-first-contact from a week to a day
     \item Integrated payment and authorisation services; maintained shared libraries across backend microservices
@@ -120,7 +120,7 @@
     \capsdef{////}{\scshape}{0.1pt}{2.5pt}{1pt}
     \begin{rSubsection}{University of Richmond}{May 2021}{BSc in Computer Science}{Virginia, USA}
     \item[] Science Scholar with full tuition scholarship
-    \item[] \caps{Relevant coursework: } DSA, Computer Architecture \& Security, AI, ML
+    \item[] \caps{Relevant coursework: } Data Structures \& Algorithms, Machine Learning, Computer Architecture \& Security, Artificial Intelligence
     \end{rSubsection}
 
 \end{rSection}
