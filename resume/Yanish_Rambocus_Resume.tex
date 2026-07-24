@@ -81,27 +81,26 @@
 
 \begin{rSection}{Work Experience}
     \begin{rSubsection}{Lorica Energy}{Mar 2026 - Present}{Founding Engineer}{London, UK}
-    \item Sole engineer owning full cloud infrastructure and delivery stack for TypeScript monorepo
-    \item As founding engineer, set the technical direction and engineering standards -- architecture, CI/CD, multi-environment deployment -- that later hires build on
-    \item Provisioned the entire AWS estate as code with Terraform, delivering reproducible, version-controlled environments and one-command spin-up from day one
+    \item Sole engineer owning full cloud infrastructure and delivery stack across Vercel, Neon and Railway for a TypeScript monorepo
+    \item Set the technical foundation and engineering standards including architecture, CI/CD, multi-environment deployment so features can easily be shipped
     \item Containerised every service with Docker and built self-serve GitHub Actions CI/CD pipelines, enabling zero-touch deploys across staging and production
     \item Built automated deal-assessment engine that cut each assessment from a week to under an hour
     \item Integrated 8 public datasets, modelling relationships between them to surface bankable deal-flow insights
     \item Developed multi-agent AI system automating investment-grade risk assessment and underwriting
   \end{rSubsection}
     \begin{rSubsection}{Kerno.io}{Mar 2024 - Mar 2026}{Senior Software Engineer}{London, UK}
-    \item Automated Kubernetes and AWS provisioning by containerising the Pulumi program into an image published to AWS ECR and driving it through GitHub Actions -- making provisioning fully reproducible and cutting a 2-day job to 10 minutes
-    \item Authored reusable Pulumi components across multiple AWS accounts, standardising provisioning and eliminating configuration drift
+    \item Automated Kubernetes and AWS provisioning by leveraging Pulumi (a Terraform wrapper), GitHub Actions and AWS ECR, cutting a 2-day job to 10 minutes
+    \item Authored reusable Pulumi components across multiple AWS accounts and Kubernetes clusters, standardising provisioning and eliminating \mbox{configuration} drift
     \item Owned real-time container resource-metrics functionality of zero-config Kubernetes observability agent
     \item Automated publishing of Docker and Helm installers through CI/CD, removing manual release steps and errors while growing self-serve installs from one to several a day
     \item Pioneered repository-indexing layer that powered company's pivot to AI-native testing product
-    \item Owned onboarding for new engineers, mentoring them to productivity across Kotlin, Pulumi and AWS
+    \item Owned onboarding for new engineers, mentoring them to productivity across Kotlin, Pulumi, AWS and Kubernetes
   \end{rSubsection}
   \begin{rSubsection}{OVO Energy}{Nov 2022 - Feb 2024}{Software Engineer}{London, UK}
     \item Took ownership of team onboarding and upskilling, mentoring several junior engineers from no Terraform to independently shipping production infrastructure
-    \item Led multiple cross-functional initiatives, aligning stakeholders across product and engineering to replace manual processes with auditable, event-driven automation tooling
-    \item Owned the team's infrastructure end-to-end -- AWS (Lambda, ECS, SQS, DynamoDB, S3), Aiven-managed Kafka and GCP -- codified in Terraform, turning ad-hoc setup into a repeatable, self-serve process
-    \item Optimised CI/CD pipelines, cutting average CI/CD times by 50\% and Lambda execution times by 12x
+    \item Led multiple cross-functional initiatives from ideation to delivery by owning systems design, architecture, stakeholder alignment and iterative refinement which replaced manual processes with auditable, event-driven automation tooling
+    \item Owned the team's infrastructure end-to-end AWS (Lambda, ECS, SQS, DynamoDB, S3), Aiven-managed Kafka and GCP using Terraform, turning ad-hoc setup into a repeatable, self-serve process
+    \item Optimised CI/CD pipelines, cutting average GitHub Actions run times by 50\% and Lambda execution times by 12x
     \item Migrated team's CI/CD from CircleCI to GitHub Actions, cutting tool sprawl and standardising on a single, less error-prone pipeline
   \end{rSubsection}
   \begin{rSubsection}{So Energy}{Dec 2021 - Nov 2022}{Junior Backend Engineer}{London, UK}
@@ -109,6 +108,7 @@
     \item Containerised backend services with Docker and wired them into CI/CD pipelines for repeatable, low-risk releases
     \item Automated solar-panel lead generation, cutting time-to-first-contact from a week to a day
     \item Integrated payment and authorisation services; maintained shared libraries across backend microservices
+    \item Mentored teammates on Kotlin and Helm-based deployment workflows, sharing knowledge across the backend team early in my career
   \end{rSubsection}
 
 \end{rSection}
